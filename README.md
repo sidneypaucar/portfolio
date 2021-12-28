@@ -1,2 +1,2 @@
-# Sidney Paucar Website
+# Sidney Paucar
 Portfolio Website
