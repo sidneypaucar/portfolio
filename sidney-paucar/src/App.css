@@ -20,9 +20,6 @@ section{
   max-width: 1600px;
   min-height: 100vh;
   padding: 0px 150px;
-  /* border-color: green;
-  border-width: 5px;
-  border-style: solid; */
 }
 
 .Home-Page{
@@ -32,9 +29,6 @@ section{
   align-items: flex-start;
   min-height: 100vh;
   padding: 0px;
-  /* border-color: aqua;
-  border-width: 5px;
-  border-style: solid; */
 }
 
 .Home-Text1{
@@ -42,17 +36,11 @@ section{
   font-size: 16px;
   font-weight: 400;
   opacity: 80%;
-  /* border-color: aqua;
-  border-width: 5px;
-  border-style: solid; */
 }
 
 .Home-Text2{
   margin: 0px;
   font-size: 80px;
-  /* border-color: aqua;
-  border-width: 5px;
-  border-style: solid; */
 }
 
 .Home-Text3{
@@ -60,9 +48,6 @@ section{
   margin-top: 10px;
   font-size: 80px;
   opacity: 50%;
-  /* border-color: aqua;
-  border-width: 5px;
-  border-style: solid; */
 }
 
 .Home-Text4{
@@ -70,9 +55,6 @@ section{
   max-width: 540px;
   font-size: 24px;
   opacity: 75%;
-  /* border-color: aqua;
-  border-width: 5px;
-  border-style: solid; */
 }
 /* ========================================= */
 .About {
@@ -81,9 +63,6 @@ section{
   max-width: 1600px;
   min-height: 100vh;
   padding: 0px 150px;
-  /* border-color: aqua;
-  border-width: 5px;
-  border-style: solid; */
 }
 
 .About-Me {
@@ -94,38 +73,26 @@ section{
   min-height: 100vh;
   max-width: 900px;
   padding: 0px;
-  border-color: orange;
-  border-width: 5px;
-  border-style: solid;
 }
 
 .About-Header{
     display: flex;
     align-items: center;
     position: relative;
-    margin: 10px 0px 40px;
-    width: 100%;
-    font-size: clamp(26px,5vw,var(--fz-heading));
-    white-space: nowrap;
-
-
-  border-color: orange;
-  border-width: 5px;
-  border-style: solid;
+    margin: 10px 0px 20px;
+    font-size: 32px;
 }
 
 .Inner {
   display: grid;
-    grid-template-columns: 4fr 2fr;
-    gap: 50px;
+  grid-template-columns: 4fr 2fr;
+  gap: 50px;
 }
 
 .About-Description {
-  margin: 0px 0px 15px;
+  margin: 0px 0px 65px;
   max-width: 540px;
-  border-color: aqua;
-  border-width: 5px;
-  border-style: solid;
+  font-size: 20px;
 }
 
 .Profile-Pic{
@@ -133,35 +100,150 @@ section{
   justify-content: space-between;
   height: 370px;
   width: 300px;
-  border-color: aqua;
-  border-width: 5px;
-  border-style: solid;
+  margin-top: 0px;
 }
 
 .info {
   margin:0px;
-  border-color: aqua;
-  border-width: 5px;
-  border-style: solid;
+  font-size: 20px;
+  text-align: center;
 }
 
 ul{
   display: grid;
-    grid-template-columns: repeat(4, minmax(100px, 10px));
-    gap: 0px 10px;
-    padding: 0px;
-    margin: 20px 0px 0px;
-    list-style: none;
+  justify-content: center;
+  grid-template-columns: repeat(4, minmax(100px, 10px));
+  gap: 10px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  list-style: none;
+}
+
+li {
+width: 75px;
+height: 75px;
+margin-top: 0px;
+margin-right: 0px;
 }
 
 .icons{
   filter: brightness(0%);
 }
 
-img {
+.icon {
   display: flex;
   flex-direction: column;
-  height: 50px;
+  height: 75px;
+  width: 75px;
+  margin: 0px 0px 0px 0px;
+}
+/* ========================================= */
+.Project {
+  background-color: #F1EFE9;
+  margin: 0px auto;
+  max-width: 1600px;
+  min-height: 100vh;
+  padding: 0px 150px;
+}
+
+.Projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  max-width: 900px;
+  padding: 0px;
+}
+
+.Project-Header{
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 60px 0px 10px 0px;
+  font-size: 32px;
+}
+
+.Jasz-Inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+}
+
+.Jasz-Description {
+  margin: 0px 0px 0px 50px;
+  max-width: 500px;
+  font-size: 20px;
+}
+
+.Jasz-Image{
+  width: 50%;;
+  margin-top: 0px;
+}
+
+.Matrix-Inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+}
+
+.Matrix-Description {
+  margin: 0px 0px 0px 50px;
+  max-width: 500px;
+  font-size: 20px;
+
+}
+
+.Matrix-Image{
+  width: 50%;;
+  margin-top: 0px;
+
+}
+
+.Bar-Inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+}
+
+.Bar-Description {
+  margin: 0px 0px 0px 50px;
+  max-width: 500px;
+  font-size: 20px;
+}
+
+.Bar-Image{
+  width: 50%;;
+  margin-top: 0px;
+}
+
+footer{
+  background-color: black;
+  color: #E2DED1;
+  text-align: center!important;
+}
+
+.footer-text1 {
+  font-size: 40px;
+  margin-top: auto;
+  padding-top: 20vh;
+}
+
+.footer-text2 {
+  font-size: 20px;
+}
+
+.External-Link {
+  filter: invert(97%) sepia(5%) saturate(411%) hue-rotate(4deg) brightness(93%) contrast(90%);
   width: 50px;
-  margin-top: 20px;
+  height: 50px;
+  margin: 10px
+}
+
+.footer-text3 {
+  font-size: 20px;
+}
+
+.footer-text4 {
+  font-size: 20px;
 }
