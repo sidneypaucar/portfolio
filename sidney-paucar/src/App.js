@@ -1,5 +1,5 @@
+import { ExternalLink } from 'react-external-link'
 import './App.css';
-import Nav from './components/Nav';
 import Footer from './components/Footer';
 
 function App() {
@@ -14,9 +14,6 @@ function App() {
         <p className='Home-Text4'>I am a NYC-based Full-Stack Software Engineer specializing in building responsive websites and functional applications.</p>
         </section>
       </div>
-      <nav>
-        <Nav />
-      </nav>
       <div className='About'>
         <section className='About-Me'>
           <p className='About-Header'>About Me</p>
@@ -103,9 +100,15 @@ function App() {
                 </li>
               </ul>
             </div>
+            <div className='Profile-Resume'>
             <img className='Profile-Pic'
-              src="https://i.imgur.com/zLkMHbS.jpg"
-              alt="profile_pic" />
+              src="https://i.imgur.com/EqAgM6G.jpg"
+              alt="profile_pic"
+            />
+            <ExternalLink className= 'Resume' href='https://docs.google.com/document/d/16BmhJ_lvKY9Vs8er5zvZ1AMkUK2Q9peDLqh3WTvv2os/edit?usp=sharing'>
+            Click here for Resume
+              </ExternalLink>
+            </div>
           </div> 
         </section>
       </div>
@@ -116,28 +119,73 @@ function App() {
           </p>
           <br />
           <div className='Jasz-Inner'>
-              <img className='Jasz-Image'
+            <img className='Jasz-Image'
               src="https://i.imgur.com/4jjcGmQ.jpg"
               alt="jasz_image" />
+            <div className='Jasz-Links'>
               <p className='Jasz-Description'>
-                The Jasz Library is a Full-Stack Application where anyone can search and view the books in the library as well as it's Author, Genre, and Blurb. If a user would like to contribute, they can create an account and add their own books to the library. They can also update or delete a book if there are corrections that need to be made. The Front-End with is built with ReactJS. Backend is built with MongoDB and Mongoose.
+                The Jasz Library is a full-stack application where anyone can search and view the books in the library as well as it's Author, Genre, and Blurb. If a user would like to contribute, they can create an account and add their own books to the library. They can also update or delete a book if there are corrections that need to be made. The Front-End with is built with ReactJS. Backend is built with MongoDB and Mongoose.
               </p>
+            <div className='Jasz-Site-Link'>
+              <a 
+                className='Site'
+                href='https://jasz-library.netlify.app/'>
+                Live Site
+              </a>
+              <ExternalLink 
+                href='https://github.com/sidneypaucar/JASZ-Library'>
+                <img className='Repo'
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+              </ExternalLink>
+            </div>
           </div>
+          </div>        
           <div className='Matrix-Inner'>
-              <img className='Matrix-Image'
+            <img className='Matrix-Image'
               src="https://i.imgur.com/SAKMFw5.jpg"
               alt="matrix_image" />
+            <div className='Matrix-Links'>
               <p className='Matrix-Description'>
               Each pill navigates the user into their choice, either find out the secrets that lie beyond, or rather remain sane and watch funny videos. The Matrix is loosely based off of the movie franchise in which the user must decide whether to either take the red pill, or blue one. Built solely with ReactJS. 
               </p>
+            <div className='Matrix-Site-Link'>
+              <a 
+                className='Site'
+                href='https://thematrixproject.netlify.app/'>
+                Live Site
+              </a>
+              <ExternalLink 
+                href='https://github.com/sidneypaucar/the-matrix'>
+                <img className='Repo'
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+              </ExternalLink>
+            </div>
           </div>
+          </div>
+
+          
+          
           <div className='Bar-Inner'>
-              <img className='Bar-Image'
+            <img className='Bar-Image'
               src="https://i.imgur.com/MiORH6n.png"
               alt="bar_image" />
+            <div className='Bar-Links'>
               <p className='Bar-Description'>
-              Bushwick Bar is a full-stack web application where any guest can openly craft their very own cocktail. Anyone can view cocktails already crafted by others, however, if a user decides to craft one, they must Sign In/Sign Up to create one out of over 40+ ingredients the barista has behind the counter. The Front-End is built with ReactJS, and Backend built with Ruby on Rails.
+              Bushwick Bar is a full-stack web application where any guest can openly craft their very own cocktail. Anyone can view cocktails already crafted by others, however, if a user decides to craft one, they must Sign In/Sign Up to create one out of over 40+ ingredients the barista has behind the counter. The Front-End is built with ReactJS, and the Backend with Ruby on Rails.
               </p>
+            <div className='Bar-Site-Link'>
+              <a 
+                className='Site'
+                href='https://bushwickbar.netlify.app/'>
+                Live Site
+              </a>
+              <ExternalLink 
+                href='https://github.com/sidneypaucar/Bushwick-Bar'>
+                <img className='Repo'
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+              </ExternalLink>
+            </div>
+          </div>
           </div>
         </section>
       </div>
