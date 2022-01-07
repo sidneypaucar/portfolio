@@ -18,9 +18,9 @@ function App() {
         <section className='About-Me'>
           <p className='About-Header'>About Me</p>
           <div className='Inner'>
-            <div>
+            <div className='About-Div'>
               <p className='About-Description'>
-                Hello! My name is Sidney and I am a Full Stack Software Developer with a passion for creating functional, aesthetically appealing, and user friendly sites with a demonstrated history of working with multiple languages. Experienced with Ruby on Rails, JavaScript, React and MongoDB and similar frameworks. I bring strong skills in problem solving, communication as well as an intrinsic passion towards UX/UI. 
+                Hello! My name is Sidney Paucar and I am a Full Stack Software Developer with a passion for creating functional, aesthetically appealing, and user friendly sites with a demonstrated history of working with multiple languages. Experienced with Ruby on Rails, JavaScript, React and MongoDB and similar frameworks. I bring strong skills in problem solving, communication as well as an intrinsic passion towards UX/UI. 
               </p>
               <p className='info'>
                 Tech Stack
@@ -106,7 +106,7 @@ function App() {
               alt="profile_pic"
             />
             <ExternalLink className= 'Resume' href='https://docs.google.com/document/d/16BmhJ_lvKY9Vs8er5zvZ1AMkUK2Q9peDLqh3WTvv2os/edit?usp=sharing'>
-            Click here for Resume
+            Click here for Resume  
               </ExternalLink>
             </div>
           </div> 
@@ -114,7 +114,8 @@ function App() {
       </div>
       <div className='Project'>
         <section className='Projects'>
-          <p className='Project-Header'>
+          <p
+            className='Project-Header'>
             Projects
           </p>
           <br />
@@ -124,7 +125,7 @@ function App() {
               alt="jasz_image" />
             <div className='Jasz-Links'>
               <p className='Jasz-Description'>
-                The Jasz Library is a full-stack application where anyone can search and view the books in the library as well as it's Author, Genre, and Blurb. If a user would like to contribute, they can create an account and add their own books to the library. They can also update or delete a book if there are corrections that need to be made. The Front-End with is built with ReactJS. Backend is built with MongoDB and Mongoose.
+              <strong>The Jasz Library</strong> is a full-stack web application where anyone can search and view books in the library as well as its information. If a user would like to contribute, they can create an account and add or update existing books to the library. The Front-End with is built with ReactJS. Backend is built with MongoDB and Mongoose.
               </p>
             <div className='Jasz-Site-Link'>
               <a 
@@ -146,7 +147,7 @@ function App() {
               alt="matrix_image" />
             <div className='Matrix-Links'>
               <p className='Matrix-Description'>
-              Each pill navigates the user into their choice, either find out the secrets that lie beyond, or rather remain sane and watch funny videos. The Matrix is loosely based off of the movie franchise in which the user must decide whether to either take the red pill, or blue one. Built solely with ReactJS. 
+              <strong>The Matrix Project</strong> is loosely based off of the movie franchise in which the user must decide whether to either take the red pill, or blue one. Each pill navigates the user into their choice, either find out the secrets that lie beyond, or rather remain sane and watch funny videos. Built solely with ReactJS. 
               </p>
             <div className='Matrix-Site-Link'>
               <a 
@@ -162,16 +163,13 @@ function App() {
             </div>
           </div>
           </div>
-
-          
-          
           <div className='Bar-Inner'>
             <img className='Bar-Image'
               src="https://i.imgur.com/MiORH6n.png"
               alt="bar_image" />
             <div className='Bar-Links'>
               <p className='Bar-Description'>
-              Bushwick Bar is a full-stack web application where any guest can openly craft their very own cocktail. Anyone can view cocktails already crafted by others, however, if a user decides to craft one, they must Sign In/Sign Up to create one out of over 40+ ingredients the barista has behind the counter. The Front-End is built with ReactJS, and the Backend with Ruby on Rails.
+              <strong>Bushwick Bar</strong> is a full-stack web application where any guest can openly craft their very own cocktail. Anyone can view cocktails already crafted by others, however, if a user decides to craft one, they must Sign In/Sign Up to create one out of over 40+ ingredients the barista has behind the counter. The Front-End is built with ReactJS, and the Backend with Ruby on Rails.
               </p>
             <div className='Bar-Site-Link'>
               <a 

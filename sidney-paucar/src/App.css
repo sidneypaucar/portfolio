@@ -3,7 +3,6 @@
 
 section{
   margin: 0px auto;
-  max-width: 1000px;
 }
 
 p, a{
@@ -42,7 +41,6 @@ p, a{
 }
 
 .Home-Text3{
-
   margin: 0px;
   margin-top: 10px;
   font-size: 70px;
@@ -79,11 +77,11 @@ p, a{
 .About-Header{
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   font-size: 32px;
-  text-shadow: 1px 1px 1px #777777;
+  text-shadow: 1px 1px 5px #777777;
   display: flex;
   align-items: center;
   position: relative;
-  margin: 60px 0px 10px;
+  margin: 60px 0px 35px;
 }
 
 .Inner {
@@ -97,9 +95,10 @@ p, a{
 }
 
 .About-Description {
-  margin: 0px 0px 35px;
+  margin: 0px 0px 20px;
   max-width: 540px;
   font-size: 20px;
+  text-align: justify;
 }
 
 .Profile-Pic{
@@ -112,45 +111,61 @@ p, a{
   border-radius: 50%;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
   text-align: center;
+  transition: 300ms linear;
+}
+
+.Profile-Pic:hover{
+  transform: scale(1.03);
+  transition: transform 330ms ease-in-out;
 }
 
 .Resume {
   color: black;
   font-size: 20px;
-  opacity: 70%;
+  opacity: 80%;
   margin-top: 10px;
   text-decoration: none;
+  text-shadow: 0px 0px 2px #777777;
+  font-weight: 400;
 }
 
 .Resume:hover {
-  color: #ffffff;
+  color: #49432e;
 }
 
 .info {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
-  margin:0px;
+  margin: 0px;
+  font-weight: 500;
 }
 
 ul{
-  display: grid;
+  /* display: grid;
   justify-content: center;
   grid-template-columns: repeat(4, minmax(100px, 10px));
   gap: 10px 10px;
   padding: 0px;
   margin: 20px 0px 0px;
+  list-style: none; */
+
+  display: flex;
+  justify-content: center;
   list-style: none;
+  flex-wrap: wrap;
+  padding: 0px;
 }
 
 li {
-width: 75px;
-height: 75px;
-margin-top: 0px;
-margin-right: 0px;
+  display: inline-block;
+  margin: 10px 10px;
+  width: 75px;
+  height: 75px;
 }
 
 .icons{
   filter: brightness(0%);
+  
 }
 
 .icon {
@@ -159,6 +174,10 @@ margin-right: 0px;
   height: 75px;
   width: 75px;
   margin: 0px 0px 0px 0px;
+}
+
+.icon:hover {
+  transform: scale(1.1);
 }
 /* ========================================= */
 .Project {
@@ -183,6 +202,7 @@ margin-right: 0px;
   display: flex;
   align-items: center;
   position: relative;
+  text-shadow: 1px 1px 5px #777777;
   margin: 60px 0px 10px 0px;
   font-size: 32px;
 }
@@ -200,12 +220,19 @@ margin-right: 0px;
   box-shadow: 0 8px 16px 0 rgb(0 0 0 / 40%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   text-align: center;
   border-radius: 5px;
+  transition: 300ms linear;
+}
+
+.Jasz-Image:hover {
+  transform: scale(1.1);
+  transition: transform 330ms ease-in-out;
 }
 
 .Jasz-Description {
   margin: 0px 0px 0px 50px;
   max-width: 500px;
   font-size: 20px;
+  text-align:justify;
 }
 
 .Jasz-Site-Link {
@@ -227,12 +254,19 @@ margin-right: 0px;
   box-shadow: 0 8px 16px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   text-align: center;
   border-radius: 5px;
+  transition: 300ms linear;
+}
+
+.Matrix-Image:hover {
+  transform: scale(1.1);
+  transition: transform 330ms ease-in-out;
 }
 
 .Matrix-Description {
   margin: 0px 0px 0px 50px;
   max-width: 500px;
   font-size: 20px;
+  text-align:justify;
 }
 
 .Matrix-Site-Link {
@@ -254,12 +288,19 @@ margin-right: 0px;
   box-shadow: 0 8px 16px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   text-align: center;
   border-radius: 5px;
+  transition: 300ms linear;
+}
+
+.Bar-Image:hover {
+  transform: scale(1.1);
+  transition: transform 330ms ease-in-out;
 }
 
 .Bar-Description {
   margin: 0px 0px 0px 50px;
   max-width: 500px;
   font-size: 20px;
+  text-align:justify;
 }
 
 
@@ -270,7 +311,7 @@ margin-right: 0px;
 }
 
 .Site {
-  color: #000000;
+  color: black;
   margin: 10px 0px 0px 0px;
   padding-top: 5px;
   text-decoration: none;
@@ -278,8 +319,7 @@ margin-right: 0px;
 }
 
 .Site:hover {
-  color: black;
-  text-shadow: 0px 0px 1px #000000;
+  color: #49432e;
 }
 
 .Repo {
@@ -287,10 +327,15 @@ margin-right: 0px;
   height: 30px;
   margin: 10px 0px 0px 0px;
   border-radius: 50%;
+  filter: brightness(0%);
+  transition: 300ms linear;
 }
 
 .Repo:hover {
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  filter: invert(21%) sepia(66%) saturate(235%) hue-rotate(9deg) brightness(96%) contrast(88%);
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+  transition: transform 330ms ease-in-out;
 }
 /* ========================================= */
 footer{
@@ -343,11 +388,138 @@ footer{
   font-size: 20px;
   opacity: 70%;
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .footer-text5 {
   font-size: 20px;
-  opacity: 40%;
+  margin-top: 0px;
+  opacity: 30%;
 
+}
+
+/* ========================================= */
+@media only screen and (max-width: 968px) {
+  .Home, .About, .Project {
+    padding: 0px 50px;
+  }
+
+    .Inner {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .About-Header, .Project-Header {
+    font-weight: bolder;
+    text-shadow: 0px 0px 1px #777777;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .About-Div {
+    overflow:auto;
+  }
+
+  .Profile-Pic {
+    display: flex;
+    max-height: 384px;
+    box-shadow: none;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    justify-content: center;
+
+  }
+
+  .Jasz-Inner, .Matrix-Inner, .Bar-Inner {
+    flex-direction: column;
+  }
+
+  .Jasz-Image, .Matrix-Image, .Bar-Image {
+    width: 100%;
+    max-height: fit-content;
+    margin-bottom: 50px;
+  }
+
+  .About-Description, .Jasz-Description, .Matrix-Description, .Bar-Description {
+    margin-left: 0px;
+    max-width: fit-content;
+
+  }
+
+  .Jasz-Site-Link, .Matrix-Site-Link, .Bar-Site-Link {
+    margin-left: 0px;
+  }
+
+  .footer-text2 {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 675px) {
+  .Home, .About, .Project {
+    padding: 0px 25px;
+  }
+
+  .Inner {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 325px;
+  }
+
+  .About-Header, .Project-Header {
+    font-weight: bolder;
+    text-shadow: 0px 0px 1px #777777;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .About-Div {
+    overflow:auto;
+  }
+
+  ul {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .Profile-Resume{
+    text-align: center;
+  }
+
+  .Profile-Pic {
+    max-height: 319px;
+    box-shadow: none;
+    margin-top: 18px;
+    margin-bottom: 10px;
+  }
+
+  .Jasz-Inner, .Matrix-Inner, .Bar-Inner {
+    flex-direction: column;
+    max-width: 325px;
+  }
+
+  .Jasz-Image, .Matrix-Image, .Bar-Image {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .Jasz-Description, .Matrix-Description, .Bar-Description {
+    margin-left: 0px;
+  }
+
+  .Jasz-Site-Link, .Matrix-Site-Link, .Bar-Site-Link {
+    margin-left: 0px;
+  }
+
+  .footer-text2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
